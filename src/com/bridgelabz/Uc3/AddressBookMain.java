@@ -7,5 +7,11 @@ public class AddressBookMain {
         AddressBook addressBook = new AddressBook();
         addressBook.addContact();
         addressBook.display();
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the First Name To Edit : ");
+        String firstName = scanner.next();
+        addressBook.editContact(firstName);
+        addressBook.display();
     }
 }
