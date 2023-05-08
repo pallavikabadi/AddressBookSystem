@@ -1,10 +1,31 @@
-package com.bridgelabz.Uc5;
+package com.bridgelabz.Uc6;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AddressBook extends Collection{
+public class AddressBook extends Collection {
 
+    private String addressBookName;
+
+    public AddressBook(String addressBookName) {
+
+        this.addressBookName = addressBookName;
+    }
+    public AddressBook() {
+
+    }
+    public String getAddressBookName() {
+        return addressBookName;
+    }
+    public void setAddressBookName(String addressBookName) {
+        this.addressBookName = addressBookName;
+    }
+    @Override
+    public String toString() {
+        return "AddressBook{" +
+                "contacts=" + list +
+                ", addressBookName='" + addressBookName + '\'' +
+                "}\n";
+    }
     public void addContact() {
 /*
     Creating Contacts for each person by Using Scanner method
